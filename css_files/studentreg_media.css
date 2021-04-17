@@ -1,0 +1,28 @@
+@media (max-width: 1147px) {
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  input {
+    display: inline-block;
+    float: right;
+    min-width: 50%;
+  }
+  .full .header {
+    margin-top: 12rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .full {
+    background-image: none;
+  }
+  .full .header {
+    margin-top: 2rem;
+  }
+  .full form {
+    margin-top: 2rem;
+  }
+}

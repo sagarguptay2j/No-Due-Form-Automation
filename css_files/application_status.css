@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  body {
+    background-color: #e7e7e7;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #455662;
+    font-size: 3rem;
+  }
+  
+  .table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .table-top input {
+    height: 2rem;
+    width: 20rem;
+    outline: none;
+    border: 1px solid #455662;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+  }
+  
+  .table-top .searchdiv {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .searchdiv i {
+    transform: translateX(1.5rem);
+  }
+  
+  .tab-wrapper {
+    position: relative;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .tab-content h1 {
+    margin: 1.5rem 0;
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #455662;
+  }
+  
+  .tab-selection {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+  }
+  .tablinks {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 30%;
+    background-color: #b3b3b3;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .tablinks:hover {
+    background-color: #ffffff;
+    transition: 0.5s;
+  }
+  
+  .tablinks.active {
+    background-color: #c9243f;
+    color: #ffffff;
+    z-index: 100;
+    outline: none;
+    font-size: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background-color: #b3b3b3;
+  }
+  
+  table tbody tr:hover {
+    background-color: #ffffff;
+  }
+  
+  table th {
+    color: #941c2a;
+    padding: 1rem;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+  }
+  
+  table tr {
+    padding: 0.5rem;
+  }
+  
+  table td {
+    text-align: center !important;
+    vertical-align: middle;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  table tr a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+  }
+  
+  .yes {
+    color: rgb(14, 87, 11);
+    padding: 0.35rem;
+  }
+  
+  .no {
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+  }
+  
+  .yes:hover {
+    background-color: rgb(14, 87, 11);
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  .no:hover {
+    background-color: red;
+    color: #ffffff;
+    transform: scale(1.2);
+  }
+  
+  .button {
+    background-color: #4CAF50; Green
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  
+  
+  .accept {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .accept:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  @media(max-width:846px){
+    .tablinks{
+      font-size:1rem;
+    }
+    .tablinks.active{
+      font-size:1.25rem;
+    }
+
+    .page-header{
+      text-align: center;
+    }
+  }
+ 
+  @media screen and (max-width: 669px){
+    body{
+      max-width: 100%;
+    }
+
+    table th{
+      font-size:0.95rem;
+    }
+
+  .table-top{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    /* justify-content: center;  */
+    /* transform: translateX(10rem); */
+    /* min-width: 50vw; */
+  }
+/* 
+  .searchdiv{
+    transform: translateX(-2.5rem);
+  } */
+
+  .table-top h1{
+      align-items: left;
+      margin: 1rem 0;
+  }
+  }
+  @media(max-width:550px){
+    .tablinks{
+      display: flex;
+      font-size:0.75rem;
+      padding:2rem 2rem;
+      min-width:50%;
+      justify-content:center;
+    }
+    .tablinks.active{
+      display: flex;
+      font-size:1rem;
+      padding:2rem 2%
+    }
+    table{
+      margin:0 0;
+    }
+    .page-top{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+  } 

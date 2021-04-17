@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.full {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('../images/homepage-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.42857143;
+  color: #333;
+}
+.box {
+  margin-left: 8%;
+  margin-top: 12rem;
+  max-width: 500px;
+  z-index: 10;
+}
+.box .header {
+  padding: 10px 10px;
+  text-align: center;
+  color: #6665b1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.box .box2 li {
+  border: 2px solid rgba(39, 39, 48, 0.329);
+  margin: 2rem;
+  padding: 1.3rem;
+  text-align: center;
+  max-width: 370px;
+  border-radius: 20px;
+  background-color: rgba(123, 60, 151, 0.8);
+  display: flex;
+  flex-direction: column;
+  /* height: 4rem; */
+}
+
+.box .box2 li p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.box .box2 li .registered {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.box .box2 li button {
+  margin-top: 1rem;
+  padding: 0.4rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 0.5rem;
+}
+
+.box .box2 li button:hover {
+  transform: scale(1.2);
+}
+
+.box .box2 li i {
+  padding-right: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+  .box{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .full{
+    background-image: url('../images/phone.jpg');
+  }
+  
+  html{
+    font-size: 87.5%;
+  }
+}
